@@ -1,20 +1,43 @@
-var total1 = 10 + 5 + 10;
-var divisao = 100 / 5;
-var modulo = 3872983892 % 3;
+var possuiGradruacao = false;
+var possuiDoutorado = true;
 
-console.log(modulo);
+if(possuiGradruacao) {
+  console.log('É verdadeiro');
+} else if(possuiDoutorado) {
+  console.log('Possui Doutorado');
+} else {
+  console.log('Não possui nada');
+}
 
-var testeNaN = '100' / 2;
-console.log(isNaN(testeNaN));
+var nome = '10kg' / 10;
 
-var soma1 = (10 + 10) + 20 + 30 * 4 / (2 + 10);
-console.log(soma1);
+if(nome) {
+  console.log(nome);
+} else {
+  console.log('Nome não existe');
+}
 
-var x = 5;
-console.log(x--);
-console.log(x);
+if(!possuiGradruacao) {
+  console.log(possuiGradruacao);
+  console.log('Não possui graduação');
+}
 
-var idade = +'28';
-var somaIdade = -5;
+var x = 10;
 
-console.log(idade);
+console.log(x !== 11)
+
+if((5 - 5) && (5 + 5)) {
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso');
+}
+
+var condicional = (5 - 10) && (5 + 5);
+if(condicional) {
+  console.log('Verdadeiro', condicional);
+} else {
+  console.log('Falso');
+}
+
+var condicional2 = (5 - 5) || (5 + 5) || (10 - 2);
+console.log(condicional2);
