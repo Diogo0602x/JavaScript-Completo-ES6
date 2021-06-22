@@ -1,28 +1,20 @@
-var idade = 28;
-var simbolo = Symbol();
-console.log(typeof simbolo);
+var total1 = 10 + 5 + 10;
+var divisao = 100 / 5;
+var modulo = 3872983892 % 3;
 
-var nome = 'Andre';
-var sobrenome = 'Rafael';
-var nomeCompleto = nome + ' ' + sobrenome;
+console.log(modulo);
 
-console.log(nomeCompleto);
+var testeNaN = '100' / 2;
+console.log(isNaN(testeNaN));
 
-// var gols = 1000;
-// var frase = 'Romário fez ' + gols + ' gols';
-// console.log(typeof frase);
+var soma1 = (10 + 10) + 20 + 30 * 4 / (2 + 10);
+console.log(soma1);
 
-var ano = '2018';
-var mes = 8;
-console.log(ano + mes);
+var x = 5;
+console.log(x--);
+console.log(x);
 
-var melhor = 'teste';
-var frase1 = "Esse é o \"melhor\" jogo";
-console.log(frase1);
+var idade = +'28';
+var somaIdade = -5;
 
-var gols = 1000;
-var frase2 = `Romário fez ${gols * 2} gols`;
-
-console.log(frase2);
-
-
+console.log(idade);
