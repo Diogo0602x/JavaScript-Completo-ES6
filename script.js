@@ -1,21 +1,23 @@
-// Declarar uma variável com o seu nome
+// Declare uma variável contendo uma string
 var nome = 'André';
 
-// Declarar uma variável com a sua idade
+// Declare uma variável contendo um número dentro de uma string
+var ano = '2018';
+
+// Declare uma variável com a sua idade
 var idade = 28;
 
-// Declarar uma variável com a sua comida
-// favorita e não atribuir valor
-var comidaFavorita;
+// Declare duas variáveis, uma com seu nome
+// e outra com seu sobrenome e some as mesmas
+var sobrenome = 'Rafael'
+var nomeCompleto = `${nome} ${sobrenome}`;
 
-// Atribuir valor a sua comida favorita
-comidaFavorita = 'Pizza';
+// Coloque a seguinte frase em uma variável: It's time
+var frase = `It's time`;
 
-// Declarar 5 variáveis diferentes sem valores
-var time = 'Vasco',
-  professor,
-  pais,
-  endereco,
-  rua;
+// Verifique o tipo da variável que contém o seu nome
+var verificarTipoNome = typeof nome;
 
-console.log(nome, idade, comidaFavorita);
+console.log(verificarTipoNome);
+
+// apagar

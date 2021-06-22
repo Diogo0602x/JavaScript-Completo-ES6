@@ -1,31 +1,28 @@
-var nome = 'André';
 var idade = 28;
-var possuiFaculdade = true;
+var simbolo = Symbol();
+console.log(typeof simbolo);
 
-console.log(nome, idade, possuiFaculdade, nome);
+var nome = 'Andre';
+var sobrenome = 'Rafael';
+var nomeCompleto = nome + ' ' + sobrenome;
 
-var preco = 25;
-var totalComprado = 5;
-var totalPreco = totalComprado * preco;
+console.log(nomeCompleto);
 
-console.log(totalPreco);
+// var gols = 1000;
+// var frase = 'Romário fez ' + gols + ' gols';
+// console.log(typeof frase);
 
-var sobrenome = 'Rafael',
-    cidade = 'Rio';
+var ano = '2018';
+var mes = 8;
+console.log(ano + mes);
 
-console.log(sobrenome, cidade);
+var melhor = 'teste';
+var frase1 = "Esse é o \"melhor\" jogo";
+console.log(frase1);
 
-var semDefinir;
-console.log(semDefinir);
+var gols = 1000;
+var frase2 = `Romário fez ${gols * 2} gols`;
 
-// console.log(aindaNaoDefine);
-var comida;
-console.log(comida);
-comida = 'Pizza';
-console.log(comida);
+console.log(frase2);
 
-// const time = 'Vasco';
-// time = 'Flamengo';
-
-// console.log(time);
 
