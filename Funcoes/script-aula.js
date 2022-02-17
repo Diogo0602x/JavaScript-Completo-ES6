@@ -7,11 +7,12 @@ console.log(areaQuadrado(10));
 function pi() {
   return 3.14;
 }
-var total = 5 * pi(); // 15.7
+
+var total = 5 * pi(); //15.7
 
 console.log(pi());
 
-function imc(peso, altura) {
+function imc(peso, altura){
   var imc = peso / (altura * altura);
   return imc;
 }
@@ -21,10 +22,10 @@ console.log(imc(80, 1.8));
 function corFavorita(cor) {
   if(cor === 'azul') {
     return 'Eu gosto do céu';
-  } else if (cor === 'verde') {
-    return 'Eu gosto de mato';
+  } else if (cor == 'verde') {
+    return 'Eu gosto de floresta';
   } else {
-    return 'Eu não gosto de cores';
+    return 'Eu gosto de preto';
   }
 }
 
@@ -42,8 +43,7 @@ function imc2(peso, altura) {
 imc2(20, 1.8); // undefined
 console.log(imc2(1000, 1.80)); // retorna o imc e undefined
 
-
-function terceiraIdade(idade) {
+function tercceiraIdade(idade) {
   if(typeof idade !== 'number') {
     return 'Por favor preencha um número'
   } else if(idade >= 60) {
@@ -53,26 +53,27 @@ function terceiraIdade(idade) {
   }
 }
 
-console.log(terceiraIdade('oi'));
+console.log(tercceiraIdade('oi'));
 
-var totalPaises = 193;
 function faltaVisitar(paisesVisitados) {
-  return `Falta visitar ${totalPaises - paisesVisitados} países`;
+  var totalPaises = 193;
+  return `Faltam visita ${totalPaises - paisesVisitados} países`
 }
 
 console.log(totalPaises);
 
-var profissao = 'Designer';
+var profissao = 'Programador';
 
 function dados() {
-  var nome = 'André';
-  var idade = 28;
+  var nome = 'Diogo';
+  var idade = 20;
   function outrosDados() {
-    var endereco = 'Rio de Janeiro';
-    var idade = 29;
+    var endereco = 'Brasília';
+    var idade = 20;
     return `${nome}, ${idade}, ${endereco}, ${profissao}`;
   }
   return outrosDados();
 }
 
-console.log(dados()); // Retorna 'André, 29, Rio de Janeiro, Designer'
+console.log(dados()); //  Retorna 'Diogo, 20, Brasília, Programador'
+outrosDados(); // retorna um erro

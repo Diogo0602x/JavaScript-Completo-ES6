@@ -24,7 +24,7 @@ if(!possuiGradruacao) {
 
 var x = 10;
 
-console.log(x !== 11)
+console.log(x !== 11);
 
 if((5 - 5) && (5 + 5)) {
   console.log('Verdadeiro');
@@ -41,3 +41,19 @@ if(condicional) {
 
 var condicional2 = (5 - 5) || (5 + 5) || (10 - 2);
 console.log(condicional2);
+
+var corFavorita = 'Verde';
+
+switch (corFavorita) {
+  case 'Azul':
+    console.log('Olhe para o céu');
+    break;
+  case 'Amarelo':
+    console.assert('Olhe para a floresta')
+    break;
+  case 'Verde':
+    console.log('Olhe para a floresta')
+    break;
+  default:
+    console.log('Feche os olhos.')
+}
