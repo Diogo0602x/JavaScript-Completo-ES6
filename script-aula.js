@@ -1,29 +1,37 @@
-//const imgs = document.querySelectorAll('img');
+const menu = document.querySelector('.menu');
 
-//imgs.forEach(function(item, index, array) {
-  //console.log(item, index, array);
-//});
+menu.classList.add('ativo', 'teste');
+menu.classList.remove('azul');
+menu.classList.toggle('azul');
 
-const titulos = document.getElementsByClassName('titulos');
- const titulosArray = Array.from(titulos);
+if(menu.classList.add('azuk')) {
+  menu.classList.add('possui-azul');
+} else {
+  menu.classList.add('nao-possui-azul');
+}
 
- //console.log(titulos);
- //console.log(titulosArray);
+menu.className += ' vermelho';
 
-titulosArray.forEach(function(item, index, array) {
-  //console.log(item, index, array);
-});
+//console.log(menu.className);
 
-const imgs = document.querySelectorAll('img');
+// console.log(menu.classList);
 
-// let i = 0;
-// imgs.forEach((item) => {
-//   console.log(i++);
-// });
+const animais = document.querySelector('.animais');
+console.log(animais.attributes['data-texto']);
 
-let i = 0;
-imgs.forEach(function() {
-  console.log(i++)
-});
+const img = document.querySelector('img');
 
-imgs.forEach(() => console.log(i++));
+const srcImg = img.getAttribute('alt');
+
+img.setAttribute('alt', 'É uma raposa')
+const possuiAlt = img.hasAttribute('title');
+console.log(possuiAlt);
+
+console.log(srcImg);
+
+const carro = {
+  portas: 4,
+  andar: function(km) {
+    console.log(`Andou ${km}`);
+  }
+}
