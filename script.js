@@ -1,45 +1,49 @@
-// Verifique a distância da primeira imagem
-// em relação ao topo da página
 const img = document.querySelector('img');
-const imgTop = img.offsetTop;
 
-console.log(imgTop);
-
-// Retorne a soma da largura de todas as imagens
-function somaImagens() {
-  const imagens= document.querySelectorAll('img');
-  let soma = 0;
-  imagens.forEach((imagem) => {
-    soma += imagem.offsetWidth;
-  });  
-  console.log(soma);
+function callback(event) {
+  console.log(event);
 }
 
-window.onload = function() {
-  somaImagens();
+// img.addEventListener('click', callback);
+
+const animaisLista = document.querySelector('.animais-lista');
+
+function callbackLsita(event) {
+  console.log(event.currentTarget);
+  console.log(event.target);
+  console.log(event.type);
 }
 
-// Verifique se os links da página possuem
-// o mínimo recomendado para telas utilizadas
-// com o dedo. (48px/48px de acordo com o google)
-const links = document.querySelectorAll('a');
+animaisLista.addEventListener('click', callbackLsita);
 
-links.forEach((link) => {
-  const linkWidth = link.offsetWidth;
-  const linkHeight = link.offsetHeight;
-  if(linkWidth >= 48 && linkHeight >= 48) {
-    console.log(link, 'Possui boa acessibilidade')
-  } else {
-    console.log(link, 'Não possui boa acessibilidade')
-  }
-});
+const linkExterno = document.querySelector('a[href^="http"]');
 
-// Se o browser for menor que 720px,
-// adicione a classe menu-mobile ao meni
-
-const browserSmall = window.matchMedia('(max-width: 720px').matches;
-
-if(browserSmall) {
-  const menu = document.querySelector('.menu');
-  menu.classList.add('menu-mobile');
+function handleLinkExterno(event) {
+  event.preventDefault();
+  //console.log(event);
+  consol.log(this.getAttribute('href'));
+  console.log(event.currentTarget);
 }
+
+linkExterno.addEventListener('click', handleLinkExterno);
+
+const h1 = document.querySelector('h1');
+
+function handleEvent(event) {
+  console.log(event.type, event);
+}
+
+//h1.addEventListener('click', handleEvent);
+//h1.addEventListener('mouseenter', handleEvent);
+//h1.addEventListener('mouseenter', handleEvent);
+//h1.addEventListener('mousemove', handleEvent);
+
+//window.addEventListener('scroll', handleEvent);
+//window.addEventListener('resize', handleEvent);
+
+function handleKeyboard(event) {
+  if(event.key === 'f')
+  document.body.classList.toggle('fullscreen');
+}
+
+window.addEventListener('keydown', handleKeyboard);
