@@ -35,7 +35,7 @@ body {
 
 .menu li a {
   display: block;
-  padding: 10px;
+  padding: 15px 10px;
   margin-right: 10px;
   color: #222;
   text-decoration: none;
@@ -119,11 +119,11 @@ body {
 }
 
 .faq-lista {
-  grid-column: 2 / 4;
+  grid-column: 2 / 4
 }
 
 .faq-lista dt {
-  font-family: 'IBM Plex Mono ', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: .5rem;
@@ -168,7 +168,7 @@ body {
 }
 
 .copy {
-  grid-column: 3 / 5;
+  grid-column: 3/5;
   margin-bottom: 2rem;
   background: #FB5;
 }
@@ -190,7 +190,7 @@ body {
     grid-template-columns: 100px 1fr;
     grid-gap: 10px;
   }
-  .animas-lista {
+  .animais-lista {
     grid-column: 1;
   }
   .faq-lista, .dados, .mapa {

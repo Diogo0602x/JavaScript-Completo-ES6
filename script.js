@@ -1,27 +1,35 @@
-// Adicione a classe ativo a todos os itens do menu
-const itensMenu = document.querySelectorAll('.menu a');
+const listaAnimais = document.querySelector('.animais-lista');
 
-itensMenu.forEach((item) => {
-  item.classList.add('ativo');
-});
+const height = listaAnimais.scrollHeight;
+const animaisTop = listaAnimais.offsetTop;
+console.log(animaisTop);
 
-// Remove a classe ativo de todos os itens do menu e matenha apenas do primeiro
-itensMenu.forEach((item) => {
-  item.classList.remove('ativo');
-}); 
+const primeiroh2 = document.querySelector('h2');
+const h2left = primeiroh2.offsetLeft;
 
-itensMenu[0].classList.add('ativo');
+const h2rect = primeiroh2.getBoundingClientRect();
 
-// Verifique se as imagens possuem o atributo alt
-const imagensAlt = document.querySelectorAll('img');
+console.log(h2rect.top);
 
-imagensAlt.forEach((img) => {
-  const possuiAtributo = img.hasAttribute('alt');
-  console.log(img, possuiAtributo);
-});
+if(h2rect.top < 0 ) {
+  console.log('Passou do elemnto');
+}
 
-// Modifique o href do link externo no menu
-const link = document.querySelector('a[href^="http"');
-link.setAttribute('href','https://www.google.com/');
+console.log(
+  window.innerWidth,
+  window.innerHeight,
+  window.outerWidth,
+  window.outerHeight,
 
-console.log(link);
+  window.pageYOffset,
+  window.pageXOffset,
+);
+
+const small = window.matchMedia('(max-width: 600px)').matches;
+
+if(small) {
+  console.log('Usuário mobile');
+} else {
+  console.log('Usuário desktop');
+}
+
