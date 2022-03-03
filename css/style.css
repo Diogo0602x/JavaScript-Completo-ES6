@@ -3,6 +3,10 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   padding: 0px;
 }
 
+html.textoMaior {
+  font-size: 150%;
+}
+
 img {
   display: block;
   max-width: 100%;
