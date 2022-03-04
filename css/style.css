@@ -127,7 +127,8 @@ body {
 }
 
 .faq-lista {
-  grid-column: 2 / 4
+  grid-column: 2 / 4;
+  cursor: pointer;
 }
 
 .faq-lista dt {
